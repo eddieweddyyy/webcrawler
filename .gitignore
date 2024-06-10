@@ -1,0 +1,5 @@
+# ignore ALL .log files
+*.log
+
+# ignore ALL files in ANY directory named chrome-win64
+chrome-win64/

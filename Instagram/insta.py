@@ -1,5 +1,5 @@
-from selenium import webdriver # type: ignore
-from selenium.webdriver.common.keys import Keys  # type: ignore
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 import time
 from selenium.webdriver.common.by import By
 import urllib.request
@@ -19,7 +19,7 @@ e = driver.find_element(By.CSS_SELECTOR, 'input[name="password"]')
 e.click()
 e.send_keys('pw') #Your account's password
 e.send_keys(Keys.ENTER)
-time.sleep(2)
+time.sleep(3)
 
 driver.get('https://instagram.com/explore/tags/먹거리/')
 driver.implicitly_wait(10)

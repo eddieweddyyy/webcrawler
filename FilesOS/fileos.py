@@ -1,7 +1,7 @@
 import os
 
 files = os.listdir('fileos_test') #relative directory
-files = os.listdir('C:\Users\CKIRUser\Desktop\coding_eddie') #absolute directory
+files = os.listdir('C:\Users\CKIRUser\Desktop\coding_eddie\fileos\fileos.py') #absolute directory
 
 for i in os.listdir('fileos_test'):
     if 'jpg' in i:

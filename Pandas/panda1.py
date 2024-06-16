@@ -36,6 +36,22 @@ def categorize2(x):
         return 'Sofa'
     else:
         return 'Unknown'
-raw['카테고리'] = raw['상품목록'].apply(categorize2)
+
+def categorize3(x):
+    x = str(x)
+    if re.findall('Sofa|Mirror', x):
+        return 'Furniture'
+        
+def categorize4(x):
+    x = str(x)
+    if not re.findall('\D'):
+        return 'Error'
+    else:
+        return x
+  
+
+raw['카테고리'] = raw['상품목록'].apply(categorize4)     
+
+# raw['카테고리'] = raw['상품목록'].apply(categorize2)
 
 print(raw)
